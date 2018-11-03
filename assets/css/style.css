@@ -1,3 +1,5 @@
+/* ---START of styles that apply to all pages--- */
+
 /* Main Body Stylings */
 body {
     color: #777;
@@ -7,28 +9,6 @@ body {
     background-image: url("../images/houndstooth-pattern.png");
     padding: 0;
     margin: 0;
-}
-
-/* Header Stylings */
-h1 {
-    color: #4aaaa5;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    margin-top: 0;
-    border-bottom: 3px solid #ccc;
-    padding-bottom: 10px;
-}
-
-/* Floats the image on About Me to the left and makes it so the paragraphs aren't right up next to it */
-#profilePic {
-    float: left;
-    margin-right: 10px;
-}
-
-/* Applies clearfix hack */
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
 }
 
 /* Header Stylings */
@@ -42,6 +22,20 @@ header {
 #headerContent {
     width: 1000px;
     margin: 0 auto 0 auto;
+}
+
+/* Styles the part of the header that says my name */
+#Erik {
+    float: left;
+    color: #fff;
+    background-color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: bold;
+    height: 100px;
+    width: 200px;
+    line-height: 100px;
+    text-align: center;
 }
 
 /* Unordered List Stylings */
@@ -59,37 +53,15 @@ li {
     line-height: 100px;
 }
 
-/* Adds hover effect to list items */
-li:hover {
-    background-color: #4aaaa5;
-}
-
 /* This code can be used to flush the Contact list item to the edge of the main content area like in the example,
     however once I added the hover effect I think it looks better without having it flushed */
 /* #noRightPadding {
     padding-right: 0;
 } */
 
-/* Styles the part of the header that says my name */
-#Erik {
-    float: left;
-    color: #fff;
+/* Adds hover effect to list items */
+li:hover {
     background-color: #4aaaa5;
-    font-family: 'Georgia', Times, 'Times New Roman', serif;
-    font-size: 24px;
-    font-weight: bold;
-    height: 100px;
-    width: 200px;
-    line-height: 100px;
-    text-align: center;
-}
-
-/* Main Content Area Stylings */
-#mainContent {
-    background-color: #fff;
-    width: 960px;
-    margin: 50px auto 0 auto;
-    padding: 20px;
 }
 
 /* Removes underlines from anchor elements */
@@ -101,6 +73,30 @@ a:link {
 /* Makes it so clicked anchor elements don't turn purple */
 a:visited {
     color: #777;
+}
+
+/* Main Heading Stylings */
+h1 {
+    color: #4aaaa5;
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    margin-top: 0;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 10px;
+}
+
+/* Main Content Area Stylings */
+#mainContent {
+    background-color: #fff;
+    width: 960px;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+}
+
+/* Applies clearfix hack */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 /* Footer Stylings */
@@ -115,7 +111,45 @@ footer {
     border-top: 8px solid #4aaaa5;
 }
 
-/* Styles the submit div in Contact */
+/* ---END of styles that apply to all pages--- */
+
+
+/* ---START of styles that apply to About Me page--- */
+
+/* Floats the image to the left and makes it so the paragraphs aren't right up next to it */
+#profilePic {
+    float: left;
+    margin-right: 10px;
+}
+
+/* ---END of styles that apply to About Me page--- */
+
+
+/* ---START of styles that apply to Portfolio page--- */
+
+/* Positioning for the images */
+.imageContainer {
+    float: left;
+    position: relative;
+    margin-right: 50px;
+}
+
+/* Styling for the banners that appear over the images */
+.imageBanner {
+    position: absolute;
+    bottom: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---END of styles that apply to Portfolio page--- */
+
+
+/* ---START of styles that apply to Contact page--- */
+
+/* Styling for the submit div */
 #submitButton {
     background-color: #4aaaa5;
     text-align: center;
@@ -125,7 +159,7 @@ footer {
     margin-top: 10px;
 }
 
-/* Adds hover effect to submit div in Contact */
+/* Adds hover effect to submit div */
 #submitButton:hover {
     background-color: red;
 }
@@ -140,24 +174,9 @@ input, textarea {
     width: 100%;
 }
 
-/* Makes it so the text area under Message: in Contact doesn't default to one line */
+/* Makes it so the text area under Message: doesn't default to one line */
 textarea {
     min-height: 200px;
 }
 
-/* Positioning for the images in Portfolio */
-.imageContainer {
-    float: left;
-    position: relative;
-    margin-right: 50px;
-}
-
-/* Styles the banner that appears over the images in Portfolio */
-.imageBanner {
-    position: absolute;
-    bottom: 20px;
-    background-color: #4aaaa5;
-    color: #fff;
-    width: 100%;
-    text-align: center;
-}
+/* ---END of styles that apply to Contact page */
