@@ -21,14 +21,20 @@ h1 {
     margin-right: 10px;
 }
 
-.clearfix {
-    overflow: auto;
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 header {
     background-color: #fff;
     height: 100px;
     border-bottom: 3px solid #ccc;
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 50px; */
 }
 
 #headerContent {
@@ -85,7 +91,7 @@ a:visited {
 footer {
     background-color: #666;
     color: #fff;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     text-align: center;
     width: 100%;
@@ -115,6 +121,16 @@ textarea {
 }
 
 .imageContainer {
-    width: 200px;
-    margin-right: 30px;
+    float: left;
+    position: relative;
+    margin-right: 50px;
+}
+
+.imageBanner {
+    position: absolute;
+    bottom: 20px;
+    background-color: #4aaaa5;
+    color: #fff;
+    width: 100%;
+    text-align: center;
 }
