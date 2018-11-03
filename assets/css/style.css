@@ -1,3 +1,4 @@
+/* Main Body Stylings */
 body {
     color: #777;
     background-color: #4aaaa5;
@@ -8,6 +9,7 @@ body {
     margin: 0;
 }
 
+/* Header Stylings */
 h1 {
     color: #4aaaa5;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
@@ -16,38 +18,40 @@ h1 {
     padding-bottom: 10px;
 }
 
+/* Floats the image on About Me to the left and makes it so the paragraphs aren't right up next to it */
 #profilePic {
     float: left;
     margin-right: 10px;
 }
 
+/* Applies clearfix hack */
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
 
+/* Header Stylings */
 header {
     background-color: #fff;
     height: 100px;
     border-bottom: 3px solid #ccc;
-    /* position: fixed;
-    top: 0;
-    width: 100%;
-    margin-bottom: 50px; */
 }
 
+/* Centers header content within the boundary of the main content */
 #headerContent {
     width: 1000px;
     margin: 0 auto 0 auto;
 }
 
+/* Unordered List Stylings */
 ul {
     margin-top: 0;
     margin-bottom: 0;
     float: right;
 }
 
+/* List Item Stylings */
 li {
     display: inline;
     font-size: 18px;
@@ -55,10 +59,18 @@ li {
     line-height: 100px;
 }
 
-#noRightPadding {
-    padding-right: 0;
+/* Adds hover effect to list items */
+li:hover {
+    background-color: #4aaaa5;
 }
 
+/* This code can be used to flush the Contact list item to the edge of the main content area like in the example,
+    however once I added the hover effect I think it looks better without having it flushed */
+/* #noRightPadding {
+    padding-right: 0;
+} */
+
+/* Styles the part of the header that says my name */
 #Erik {
     float: left;
     color: #fff;
@@ -72,6 +84,7 @@ li {
     text-align: center;
 }
 
+/* Main Content Area Stylings */
 #mainContent {
     background-color: #fff;
     width: 960px;
@@ -79,15 +92,18 @@ li {
     padding: 20px;
 }
 
+/* Removes underlines from anchor elements */
 a:link {
     text-decoration: none;
     color: #777;
 }
 
+/* Makes it so clicked anchor elements don't turn purple */
 a:visited {
     color: #777;
 }
 
+/* Footer Stylings */
 footer {
     background-color: #666;
     color: #fff;
@@ -99,6 +115,7 @@ footer {
     border-top: 8px solid #4aaaa5;
 }
 
+/* Styles the submit div in Contact */
 #submitButton {
     background-color: #4aaaa5;
     text-align: center;
@@ -108,24 +125,34 @@ footer {
     margin-top: 10px;
 }
 
+/* Adds hover effect to submit div in Contact */
+#submitButton:hover {
+    background-color: red;
+}
+
+/* Makes the text inside the submit div white */
 #submitButton a {
     color: #fff;
 }
 
+/* Makes the text input fields span the width of the main content area */
 input, textarea {
     width: 100%;
 }
 
+/* Makes it so the text area under Message: in Contact doesn't default to one line */
 textarea {
     min-height: 200px;
 }
 
+/* Positioning for the images in Portfolio */
 .imageContainer {
     float: left;
     position: relative;
     margin-right: 50px;
 }
 
+/* Styles the banner that appears over the images in Portfolio */
 .imageBanner {
     position: absolute;
     bottom: 20px;
