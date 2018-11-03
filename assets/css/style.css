@@ -92,3 +92,21 @@ footer {
     padding-top: 50px;
     border-top: 8px solid #4aaaa5;
 }
+
+#submitButton {
+    background-color: #4aaaa5;
+    color: #fff;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50px;
+    margin-top: 10px;
+}
+
+.inputField {
+    width: 100%;
+}
+
+#messageField {
+    height: 200px;
+}
